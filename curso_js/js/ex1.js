@@ -18,13 +18,9 @@ var n2 = 10;
 console.log('O aluno ' + nomeAluno + ', Matricula ' + nMatricula + ', obteve a média final de ' + (n1 + n2) / 2);
 
 // 4)
-var telefone = '998701209';
+var telefone = "998701209";
 
-if (telefone[8] != null) {
-	console.log("Resultado do teste: true");
-}
-else
-	console.log("Resultado do teste: false");
+	console.log("Resultado do teste: " + (telefone.length == 9));
 
 // 5)
 console.log(Math.pow(32,6));
