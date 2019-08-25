@@ -78,3 +78,9 @@
 
 //var vtype = 65;
 //console.log(typeof vtype == "number");
+
+//Aula 10 - Trabalhando com DOOM
+
+var conteudo_caixa = document.getElementById('caixa_azul').innerHTML;
+
+document.getElementById('caixa_amarela').innerHTML = conteudo_caixa;
