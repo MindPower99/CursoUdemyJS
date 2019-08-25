@@ -89,6 +89,17 @@ document.getElementById('caixa_amarela').innerHTML = conteudo_caixa; */
 
 //colocando tag h1 dentro da caixa usando javascript
 
-var conteudo_caixa2 = document.getElementById('caixa_azul').innerHTML;
+/* var conteudo_caixa2 = document.getElementById('caixa_azul').innerHTML;
 
-document.getElementById('caixa_azul').innerHTML = "<h1>" + conteudo_caixa2 + "</h1>";
+document.getElementById('caixa_azul').innerHTML = "<h1>" + conteudo_caixa2 + "</h1>"; */
+
+// Aula 11 - Funções
+
+function soma_numeros() {
+	var x = 5;
+	var y = 2;
+	var soma = x + y;
+	console.log(soma);
+}
+
+soma_numeros();
