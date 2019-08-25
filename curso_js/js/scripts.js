@@ -117,4 +117,14 @@ soma_args(10,25);
 
 var n1 = 50;
 var n2 = 30;
+
 soma_args(n1,n2);
+
+//função com argumentos e exibida com texto:
+
+function soma_args2(num1,num2) {
+	var soma = num1 + num2;
+	return(soma);
+}
+
+console.log("Resultado da soma: " + soma_args2(10,25));
