@@ -96,7 +96,7 @@ document.getElementById('caixa_azul').innerHTML = "<h1>" + conteudo_caixa2 + "</
 // Aula 11 - Funções
 
 // Função sem argumentos:
-
+/*
 function soma_numeros() {
 	var x = 5;
 	var y = 2;
@@ -127,4 +127,14 @@ function soma_args2(num1,num2) {
 	return(soma);
 }
 
-console.log("Resultado da soma: " + soma_args2(10,25));
+console.log("Resultado da soma: " + soma_args2(10,25)); */
+
+//Desafio: pegar peso e altura do html, passar pela função e apresentar o imc:
+function imc (peso,altura) {
+	var alt = document.getElementById('altura').innerHTML;
+	var p = document.getElementById('peso').innerHTML;
+	var imc_peso = p / (alt * alt);
+	document.getElementById('imc').innerHTML = "<p>" + imc_peso + "</p>";
+}
+
+imc();
