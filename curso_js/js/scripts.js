@@ -130,11 +130,38 @@ function soma_args2(num1,num2) {
 console.log("Resultado da soma: " + soma_args2(10,25)); */
 
 //Desafio: pegar peso e altura do html, passar pela função e apresentar o imc:
+/*
 function imc (peso,altura) {
 	var alt = document.getElementById('altura').innerHTML;
 	var p = document.getElementById('peso').innerHTML;
 	var imc_peso = p / (alt * alt);
-	document.getElementById('imc').innerHTML = "<p>" + imc_peso + "</p>";
+	document.getElementById('imc').innerHTML = "<p>" + imc_peso.toFixed(2) + "</p>";
 }
 
-imc();
+imc(); */
+
+// Aula 12 - Arrays
+
+//Declaração de arrays
+
+var alunos = ["João","Maria","José"];
+var num_primos = [2,3,5,7,11,13];
+
+// Listagem de arrays e seus conteudos
+
+console.log(alunos.length);
+console.log(num_primos[2]);
+
+//Declaração de grupo de array
+
+var grupos = [
+	["João", "Maria"],
+	["Pedro", "Joana", "André", "Júlio"],
+	["Carolina", "Helena", "Marcelo"]
+];
+
+//Declaração de elementos de um grupo de array
+
+console.log(grupos.length);
+console.log(grupos[1]);
+console.log (grupos[2][2]);
