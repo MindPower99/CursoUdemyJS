@@ -81,6 +81,14 @@
 
 //Aula 10 - Trabalhando com DOOM
 
-var conteudo_caixa = document.getElementById('caixa_azul').innerHTML;
+//passando conteudo de uma caixa pra outra:
 
-document.getElementById('caixa_amarela').innerHTML = conteudo_caixa;
+/* var conteudo_caixa = document.getElementById('caixa_azul').innerHTML;
+
+document.getElementById('caixa_amarela').innerHTML = conteudo_caixa; */
+
+//colocando tag h1 dentro da caixa usando javascript
+
+var conteudo_caixa2 = document.getElementById('caixa_azul').innerHTML;
+
+document.getElementById('caixa_azul').innerHTML = "<h1>" + conteudo_caixa2 + "</h1>";
