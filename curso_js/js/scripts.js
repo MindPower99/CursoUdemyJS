@@ -95,6 +95,8 @@ document.getElementById('caixa_azul').innerHTML = "<h1>" + conteudo_caixa2 + "</
 
 // Aula 11 - Funções
 
+// Função sem argumentos:
+
 function soma_numeros() {
 	var x = 5;
 	var y = 2;
@@ -103,3 +105,16 @@ function soma_numeros() {
 }
 
 soma_numeros();
+
+// Função com argumentos:
+
+function soma_args(num1,num2) {
+	var soma = num1 + num2;
+	console.log(soma);
+}
+
+soma_args(10,25);
+
+var n1 = 50;
+var n2 = 30;
+soma_args(n1,n2);
