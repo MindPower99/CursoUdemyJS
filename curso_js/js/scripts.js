@@ -144,7 +144,7 @@ imc(); */
 
 //Declaração de arrays
 
-var alunos = ["João","Maria","José"];
+/* var alunos = ["João","Maria","José"];
 var num_primos = [2,3,5,7,11,13];
 
 // Listagem de arrays e seus conteudos
@@ -164,4 +164,24 @@ var grupos = [
 
 console.log(grupos.length);
 console.log(grupos[1]);
-console.log (grupos[2][2]);
+console.log (grupos[2][2]); */
+
+// Operações com arrays
+
+var cursos = [ "HTML", "Python", "PHP" ];
+
+    cursos.push("Javascript");
+
+    console.log(cursos);  // O console mostrará [ "HTML", "Python", "PHP", "Javascript" ]
+
+    cursos.unshift("Bootstrap");
+
+    console.log(cursos);  // O console mostrará [ "Bootstrap", "HTML", "Python", "PHP", "Javascript" ]
+
+    cursos.pop();
+
+    console.log(cursos);  // O console mostrará [ "Bootstrap", "HTML", "Python", "PHP" ]
+
+    cursos.shift();
+
+    console.log(cursos);  // O console mostrará [ "HTML", "Python", "PHP" ]
