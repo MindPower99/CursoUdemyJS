@@ -204,7 +204,7 @@ console.log (grupos[2][2]); */
 
     // Exemplo de objetos
 
-    var funcionario = {
+    /*var funcionario = {
     	'nome': 'Pedro Souza Gomes',
     	'ano_nasc': 1972,
     	'cpf': '111.111.111.111',
@@ -220,4 +220,37 @@ console.log (grupos[2][2]); */
     funcionario.cargo = "Gerente de TI";
     funcionario.cnh = "51613213";
 
-    console.log(funcionario);
+    console.log(funcionario);*/
+
+    // objetos dentro de arrays
+
+    var cursos = [
+    	{
+    		'titulo' : 'Aprenda programação em Python 3 com facilidade do zero',
+    		'avaliacoes' : 680,
+    		'alunos' : 2300,
+    		'categorias' : ['programação', 'tecnologia']
+    	},
+
+    	{
+    		'titulo' : 'Aprenda PHP e faça sites dinâmicos',
+    		'avaliacoes' : 180,
+    		'alunos' : 350,
+    		'categorias' : ['desenvolvimento web', 'programação']
+    	},
+
+    	{
+    		'titulo': 'Excel do zero ao avançado',
+    		'avaliacoes' : 420,
+    		'alunos' : 1800,
+    		'categorias' : ['produtividade', 'gestão']
+    	}
+    ];
+
+    // desafio: fazer o console mostrar a categoria "desenvolvimento web"
+    console.log(cursos[1].categorias[0]);
+
+    //desafio: trocar a categoria gestão po administração de empresas
+   cursos[2].categorias[1] = "administração de empresas";
+
+   console.log(cursos);
