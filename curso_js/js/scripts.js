@@ -224,7 +224,7 @@ console.log (grupos[2][2]); */
 
     // objetos dentro de arrays
 
-    var cursos = [
+    /* var cursos = [
     	{
     		'titulo' : 'Aprenda programação em Python 3 com facilidade do zero',
     		'avaliacoes' : 680,
@@ -253,4 +253,24 @@ console.log (grupos[2][2]); */
     //desafio: trocar a categoria gestão po administração de empresas
    cursos[2].categorias[1] = "administração de empresas";
 
-   console.log(cursos);
+   console.log(cursos); */
+
+   // Aula 14 - Métodos dos objetos
+
+   var aluno = {
+   		'nome': 'Maria',
+   		'sobrenome': 'Pereira',
+   		'ano_nasc': 1992,
+   		'nome_completo' : function () {
+   			var n_completo = this.nome + " " + this.sobrenome;
+   			return n_completo;
+   		   	}
+   };
+
+    		function idade() {
+   			var idade = 2019 - aluno.ano_nasc;
+   			return idade;
+   		}
+
+   console.log(aluno.nome_completo());
+   console.log(idade());
