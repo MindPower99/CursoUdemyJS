@@ -196,5 +196,28 @@ console.log (grupos[2][2]); */
 
     // extraindo parte de um array com o método slice
 
-    var alunos = ["João", "Maria", "José","Fernanda", "Pedro", "Elisa"];
-    console.log(alunos.slice(0,3));
+    /*var alunos = ["João", "Maria", "José","Fernanda", "Pedro", "Elisa"];
+    console.log(alunos.slice(0,3)); */
+
+    // Aula 13 - objetos
+
+
+    // Exemplo de objetos
+
+    var funcionario = {
+    	'nome': 'Pedro Souza Gomes',
+    	'ano_nasc': 1972,
+    	'cpf': '111.111.111.111',
+    	'cargo': 'Analista de Sistemas'
+    };
+
+    // Exibição de propriedades de um objeto
+
+    console.log(funcionario['nome']);
+    console.log(funcionario.ano_nasc);
+
+    // Mudança e inserção de objetos
+    funcionario.cargo = "Gerente de TI";
+    funcionario.cnh = "51613213";
+
+    console.log(funcionario);
