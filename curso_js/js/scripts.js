@@ -264,13 +264,17 @@ console.log (grupos[2][2]); */
    		'nome_completo' : function () {
    			var n_completo = this.nome + " " + this.sobrenome;
    			return n_completo;
+   		   	},
+   		   	'ver_idade': function () {
+   		   		var idade = 2019 - this.ano_nasc;
+   		   		return idade;
    		   	}
    };
 
-    		function idade() {
+    		/*function idade() {
    			var idade = 2019 - aluno.ano_nasc;
    			return idade;
-   		}
+   		} */
 
    console.log(aluno.nome_completo());
-   console.log(idade());
+   console.log(aluno.idade());
