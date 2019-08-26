@@ -168,7 +168,7 @@ console.log (grupos[2][2]); */
 
 // Operações com arrays
 
-var cursos = [ "HTML", "Python", "PHP" ];
+/*var cursos = [ "HTML", "Python", "PHP" ];
 
     cursos.push("Javascript");
 
@@ -184,4 +184,17 @@ var cursos = [ "HTML", "Python", "PHP" ];
 
     cursos.shift();
 
-    console.log(cursos);  // O console mostrará [ "HTML", "Python", "PHP" ]
+    console.log(cursos);  // O console mostrará [ "HTML", "Python", "PHP" ]*/
+
+ //Definindo elementos de um array manualmente
+
+    /*var ingredientes = [ "pão branco", "queijo", "presunto" ];
+
+    ingredientes[0] = "pão integral";
+
+    console.log(ingredientes);  */
+
+    // extraindo parte de um array com o método slice
+
+    var alunos = ["João", "Maria", "José","Fernanda", "Pedro", "Elisa"];
+    console.log(alunos.slice(0,3));
