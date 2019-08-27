@@ -257,7 +257,8 @@ console.log (grupos[2][2]); */
 
    // Aula 14 - Métodos dos objetos
 
-   var aluno = {
+   // Objeto com funções
+   /* var aluno = {
    		'nome': 'Maria',
    		'sobrenome': 'Pereira',
    		'ano_nasc': 1992,
@@ -271,10 +272,15 @@ console.log (grupos[2][2]); */
    		   	}
    };
 
-    		/*function idade() {
-   			var idade = 2019 - aluno.ano_nasc;
-   			return idade;
-   		} */
+   		} 
 
    console.log(aluno.nome_completo());
-   console.log(aluno.idade());
+   console.log(aluno.idade()); */
+
+   // vendo todas as funções do console
+
+   console.log( console );
+
+   // como saber o tipo de um elemento
+
+   console.log(typeof document.getElementById("tudo_obj"));
