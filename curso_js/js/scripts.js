@@ -279,8 +279,15 @@ console.log (grupos[2][2]); */
 
    // vendo todas as funções do console
 
-   console.log( console );
+	//console.log( console );
 
    // como saber o tipo de um elemento
 
-   console.log(typeof document.getElementById("tudo_obj"));
+   //console.log(typeof document.getElementById("tudo_obj"));
+   
+  // Aula 15 - Exercicios 2
+  
+
+  
+  
+  

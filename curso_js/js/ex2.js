@@ -13,3 +13,16 @@ var resultado = n1 + n2;
 
 console.log(resultado);
 document.getElementById('resultado').innerHTML = '<strong>' + resultado + '</strong>';
+
+// 2)
+
+var caixa_azul = document.getElementById('caixa_azul').innerHTML;
+
+var resultado = (9 * caixa_azul / 5) + 32;
+
+console.log(resultado);
+
+document.getElementById('caixa_amarela').innerHTML = resultado;
+
+// 3)
+
