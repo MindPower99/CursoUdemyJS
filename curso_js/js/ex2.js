@@ -38,3 +38,31 @@ document.getElementById('caixa_amarela').innerHTML = resultado;
     ];
 //console.log(grupos[1]);
 console.log(novo_array);
+
+// 4)
+// a) 
+     var curso = {
+        'titulo': "Aprenda programação em Python",
+        'categoria': ['programação', 'tecnologia', 'python'],
+        'n_aval_5_estrelas': 420,
+        'n_aval_4_estrelas': 80,
+        'n_aval_3_estrelas': 33,
+        'n_aval_2_estrelas': 20,
+        'n_aval_1_estrela': 4
+    }
+
+
+var categoria = (curso.categoria[0]);
+console.log(categoria);
+document.getElementById('categoria_principal').innerHTML = categoria;
+
+// b)
+
+function total_aval() {
+
+	}
+
+function media_aval() {
+
+}
+
