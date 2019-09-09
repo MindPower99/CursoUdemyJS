@@ -25,4 +25,16 @@ console.log(resultado);
 document.getElementById('caixa_amarela').innerHTML = resultado;
 
 // 3)
+    var grupos = [ 
+        [ "João" , "Maria" ],
+        [ "Pedro" , "Joana", "André", "Júlio" ],
+        [ "Carolina" , "Helena", "Marcelo" ]
+    ];
 
+    var novo_array = [
+    	[grupos[1][0] , grupos[1][1] , grupos[1][2] , grupos[1][3]],
+    	[grupos[2][0] , grupos[2][1] , grupos[2][2]],
+    	["Mariana", "Felipe", "Carla"]
+    ];
+//console.log(grupos[1]);
+console.log(novo_array);
