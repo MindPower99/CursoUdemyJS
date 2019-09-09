@@ -67,30 +67,40 @@ console.log(novos_grupos);
 
 // 4)
 // a) 
-     var curso = {
+ var curso = {
         'titulo': "Aprenda programação em Python",
         'categoria': ['programação', 'tecnologia', 'python'],
         'n_aval_5_estrelas': 420,
         'n_aval_4_estrelas': 80,
         'n_aval_3_estrelas': 33,
         'n_aval_2_estrelas': 20,
-        'n_aval_1_estrela': 4
+        'n_aval_1_estrela': 4,
+        'total_aval': function() {
+        	var t_aval = this.n_aval_5_estrelas + this.n_aval_4_estrelas + this.n_aval_3_estrelas + this.n_aval_2_estrelas + this.n_aval_1_estrela;
+        	return t_aval;
+        },
+
+        'media_aval': function() {
+        	var m_aval = ((5 * this.n_aval_5_estrelas) + (4 *  this.n_aval_4_estrelas) + (3 * this.n_aval_3_estrelas) + (2 * this.n_aval_2_estrelas) + (1 * this.n_aval_1_estrela)  )/ (this.n_aval_5_estrelas + this.n_aval_4_estrelas + this.n_aval_3_estrelas + this.n_aval_2_estrelas + this.n_aval_1_estrela);
+        	return m_aval;
+        }
     }
 
+    var categoria = curso.categoria[0];
 
-var categoria = (curso.categoria[0]);
-console.log(categoria);
-document.getElementById('categoria_principal').innerHTML = categoria;
+    document.getElementById("categoria_principal").innerHTML = categoria;
 
-// b)
+    var total_aval = curso.total_aval();
 
-function total_aval() {
+    var media_aval = curso.media_aval().toFixed(2);
 
-	}
+    document.getElementById("media_aval").innerHTML = media_aval;
 
-function media_aval() {
+    document.getElementById("total_aval").innerHTML = total_aval;
 
-}
+     
+
+
 
 // 5)
 
