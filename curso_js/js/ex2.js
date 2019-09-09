@@ -98,9 +98,49 @@ console.log(novos_grupos);
 
     document.getElementById("total_aval").innerHTML = total_aval;
 
-     
-
-
-
 // 5)
+
+var pessoa = {
+	'nome': 'Marina',
+	'sobrenome': 'Lopes',
+	'email': 'mlopes@gmail.com'
+};
+
+function criar_tabela(person) {
+	var tabelaHTML = '<div class="tableBox">';
+	tabelaHTML +=       '<table>';
+	tabelaHTML +=           '<tr>';
+	tabelaHTML +=                '<th>Nome Completo</th>';
+	tabelaHTML +=                '<th>Email</th>';
+	tabelaHTML +=           '</tr>';
+	tabelaHTML +=           '<tr>';
+	tabelaHTML +=           '<td>' + person.nome + '' + person.sobrenome + '</td>';
+	tabelaHTML +=           '<td>' + person.email +'</td>';
+	tabelaHTML +=           '</tr>';
+	tabelaHTML +=       '</table>';
+	tabelaHTML +=       '</div>';
+
+	return tabelaHTML;
+}
+
+var tabela = criar_tabela(pessoa);
+
+document.getElementById("tabela").innerHTML = tabela;
+
+
+
+        
+
+           
+                
+                
+            
+            
+                
+                
+            
+            
+        
+        
+    
 
