@@ -16,13 +16,26 @@ document.getElementById('resultado').innerHTML = '<strong>' + resultado + '</str
 
 // 2)
 
-var caixa_azul = document.getElementById('caixa_azul').innerHTML;
+/*var caixa_azul = document.getElementById('caixa_azul').innerHTML;
 
 var resultado = (9 * caixa_azul / 5) + 32;
 
 console.log(resultado);
 
-document.getElementById('caixa_amarela').innerHTML = resultado;
+document.getElementById('caixa_amarela').innerHTML = resultado; */
+
+// corrigindo
+
+
+function celsiusToFah(temp_c) {
+	var temp_f = (9 * temp_c / 5) + 32;
+	return temp_f
+}
+
+var celsius = parseFloat(document.getElementById("caixa_azul").innerHTML);
+var fah = celsiusToFah(celsius);
+
+document.getElementById("caixa_amarela").innerHTML = "<strong>" + fah + "</strong>";
 
 // 3)
     var grupos = [ 
@@ -65,4 +78,6 @@ function total_aval() {
 function media_aval() {
 
 }
+
+// 5)
 
