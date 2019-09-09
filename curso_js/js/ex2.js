@@ -38,7 +38,7 @@ var fah = celsiusToFah(celsius);
 document.getElementById("caixa_amarela").innerHTML = "<strong>" + fah + "</strong>";
 
 // 3)
-    var grupos = [ 
+   /* var grupos = [ 
         [ "João" , "Maria" ],
         [ "Pedro" , "Joana", "André", "Júlio" ],
         [ "Carolina" , "Helena", "Marcelo" ]
@@ -50,7 +50,20 @@ document.getElementById("caixa_amarela").innerHTML = "<strong>" + fah + "</stron
     	["Mariana", "Felipe", "Carla"]
     ];
 //console.log(grupos[1]);
-console.log(novo_array);
+console.log(novo_array); */
+
+// corrigindo
+var grupos = [ 
+        [ "João" , "Maria" ],
+        [ "Pedro" , "Joana", "André", "Júlio" ],
+        [ "Carolina" , "Helena", "Marcelo" ]
+    ];
+
+var novos_grupos = grupos.slice(-2,);
+
+novos_grupos.push(["Mariana", "Felipe", "Carla"]);
+
+console.log(novos_grupos);
 
 // 4)
 // a) 
