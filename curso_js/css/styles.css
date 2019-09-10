@@ -101,7 +101,7 @@ main button {
     cursor: pointer;
     border: none;
     background-color: #27ae61;
-    transition: 0.5s;
+    transition: 4s;
     color: white;
     font-weight: bold;
     font-size: 14px;
@@ -110,7 +110,7 @@ main button {
 
 main button:hover {
     background-color: #034732;
-    transition: 1s;
+    transition: 4s;
 }
 
 main button:focus {

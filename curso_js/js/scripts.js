@@ -307,9 +307,39 @@ console.log (grupos[2][2]); */
     alert('Você apertou a tecla' + event.keyCode);
   }; */
 
-  function button_clicked() {
+  /* function button_clicked() {
     alert("Você clicou no botão");
-  }
+  }; */
+
+  //Aula 20 - Manipulação do CSS
+
+  /* document.getElementById("botao_cor").onclick = function() {
+      document.getElementById("botao_cor").style.height = "100px";
+  }; */
+
+ /* document.getElementById("botao_cor").onclick = function() {
+      document.getElementById("botao_cor").style['background-color'] = "purple";
+      document.getElementById("botao_cor").style.transform = "translateX(100px)";
+  }; */
+
+ /*  document.getElementById("botao_cor").onclick = function() {
+      this.style['background-color'] = "purple";
+      this.style.transform = "translateX(100px)";
+  };*/
+
+  var botao = document.getElementById("botao_cor");
+
+  botao.onclick = function() {
+      botao.style['background-color'] = "purple";
+      botao.style.transform = "translateX(100px)";
+  };
+
+
+
+
+
+
+
 
 
 
