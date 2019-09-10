@@ -285,8 +285,34 @@ console.log (grupos[2][2]); */
 
    //console.log(typeof document.getElementById("tudo_obj"));
    
-  // Aula 15 - Exercicios 2
+  // Aula 19 - Eventos
+
+  /* document.getElementById("click-me").onclick = function () {
+    alert("Você clicou no botão");
+  };
+
+    document.getElementById("hover-me").onmouseover = function () {
+    alert("Você passou com o cursor no botão");
+  };
+
+     document.getElementById("leave-me").onmouseout = function () {
+    alert("Você saiu com o cursor no botão");
+  };
+
+  document.onkeydown = function () {
+    alert('Você apertou alguma tecla');
+  };
   
+  document.onkeydown = function () {
+    alert('Você apertou a tecla' + event.keyCode);
+  }; */
+
+  function button_clicked() {
+    alert("Você clicou no botão");
+  }
+
+
+
 
   
   
