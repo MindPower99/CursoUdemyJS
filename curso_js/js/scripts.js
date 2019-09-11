@@ -327,12 +327,28 @@ console.log (grupos[2][2]); */
       this.style.transform = "translateX(100px)";
   };*/
 
-  var botao = document.getElementById("botao_cor");
+ /* var botao = document.getElementById("botao_cor");
 
   botao.onclick = function() {
       botao.style['background-color'] = "purple";
       botao.style.transform = "translateX(100px)";
-  };
+  };*/
+
+  //Aula 21 - outros métodos getElement
+
+ /* var exemplo = document.getElementsByClassName("exemplo");
+
+  exemplo[0].innerHTML = "teste1";
+
+  console.log(exemplo); */
+
+  var exemplo = document.getElementsByTagName("p");
+
+  console.log(exemplo);
+
+
+
+
 
 
 
