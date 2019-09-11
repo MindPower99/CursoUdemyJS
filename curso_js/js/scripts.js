@@ -342,9 +342,46 @@ console.log (grupos[2][2]); */
 
   console.log(exemplo); */
 
-  var exemplo = document.getElementsByTagName("p");
+  /*var exemplo = document.getElementsByTagName("p");
 
-  console.log(exemplo);
+  console.log(exemplo); */
+
+  // Aula 22 - Loops For e For/In
+
+  for (var a = 1; a <= 5; a++) {
+      console.log(a);
+  };
+  var aluno = ['Pedro', 'Maria', 'José', 'Joao', 'Carlos'];
+
+  for (var b = 0; b < aluno.length; b++) {
+    console.log(aluno[b]);
+  };
+
+   var carro = {
+        'Ano': 2018,
+        'Modelo': 'Fox',
+        'Cilindradas': '1.8',
+        'Combustível': 'Gasolina'
+
+    }
+
+    for (var prop in carro) {
+      console.log(prop + ': ' + carro[prop]);
+    }
+
+var elementos = document.getElementsByClassName("exemplo");
+
+console.log(elementos);
+
+for (var c = 0; c < elementos.length; c++) {
+    elementos[c].style.color = "orange";
+    elementos[c].style['font-weight'] = "orange";
+}
+
+
+
+
+
 
 
 
