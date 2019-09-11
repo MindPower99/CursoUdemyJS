@@ -348,7 +348,7 @@ console.log (grupos[2][2]); */
 
   // Aula 22 - Loops For e For/In
 
-  for (var a = 1; a <= 5; a++) {
+  /* for (var a = 1; a <= 5; a++) {
       console.log(a);
   };
   var aluno = ['Pedro', 'Maria', 'José', 'Joao', 'Carlos'];
@@ -376,7 +376,25 @@ console.log(elementos);
 for (var c = 0; c < elementos.length; c++) {
     elementos[c].style.color = "orange";
     elementos[c].style['font-weight'] = "orange";
+} */
+
+// Aula 23 - Loops While e Do/While
+
+var count = 0;
+
+while (count < 5) {
+  console.log(count);
+  count++;
 }
+
+var count2 = 10;
+
+do  {
+  console.log(count2);
+  count2++;
+}while (count2 < 5);
+
+
 
 
 
