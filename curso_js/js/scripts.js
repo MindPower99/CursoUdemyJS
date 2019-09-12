@@ -426,14 +426,68 @@ if (nota < 7 || faltas > 4) {
 	console.log("Aprovado");
 } */
 
-var nome = "";
-
+ /*var nome = "";
 if(nome) {
 	console.log("Nome: "+ nome);
 }
 else {
 	console.log("Nome não informado");
+} */
+
+/* var socio = true;
+var idade = 25;
+
+if(socio || idade >= 65) {
+	console.log("Ingresso grátis");
 }
+else {
+	if(idade < 18) {
+		console.log("Preço a pagar: R$ 6,00");
+	}
+	else {
+		console.log("Preço a pagar: R$ 12,00");
+	}
+}
+*/
+
+ var funcionarios = [
+        
+        {
+            'nome': 'Carlos Henrique da Silva',
+            'idade': 45,
+            'filhos': ['Mariana Alves da Silva', 'Fernanda Alves da Silva']
+            
+        },
+
+        {
+            'nome': 'Maria Helena Pereira',
+            'idade': 32,
+            'filhos': undefined
+            
+        },
+
+        {
+            'nome': 'José Feliciano Maia',
+            'idade': 39,
+            'filhos': ['Felipe Ferreira Maia', 'Fábio Ferreira Maia', 'João Ferreira Maia']
+            
+        }
+    
+    ];
+	
+	var list_elements = document.getElementById("filhos");
+	list_elements.innerHTML = "";
+	
+	for (var a = 0; a < funcionarios.length; a++) {
+		
+		if (funcionarios[a].filhos) {
+			var lista_filhos = funcionarios[a].filhos;
+			
+			for (var b = 0; b < lista_filhos.length; b++) {
+				list_elements.innerHTML += '<li>' + lista_filhos[b] + ' - Filho de ' + funcionarios[a].nome; 
+			}
+		}
+	}
 
 
 
