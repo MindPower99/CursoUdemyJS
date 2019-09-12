@@ -9,3 +9,13 @@ function calcular() {
 	document.getElementById("temp_fahr").innerHTML = '<p>'+ temp_f + '</p>';
 
 }
+
+// 2)
+
+var ano_copa = 1930;
+
+while (ano_copa < 2019) {
+	console.log(ano_copa);
+	document.getElementById("anos_copa").innerHTML += '<li>' + ano_copa + '</li>';
+	ano_copa += 4;
+}	
