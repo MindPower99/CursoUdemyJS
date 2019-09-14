@@ -48,7 +48,62 @@ function calcular_nota() {
 		document.getElementById("result").innerHTML = '<strong> reprovado por falta </strong>';
 	}
 
-	
-	
-	
 }
+
+// 4)
+
+var vendas_cursos = [
+
+        {
+            'aluno': 'Emmanuel Gomes',
+            'data': '10/06/2018',
+            'valor': 34.99,
+            'reembolso': null
+            
+        },
+
+        {
+            'aluno': 'Carla Dias',
+            'data': '10/06/2018',
+            'valor': 29.99,
+            'reembolso': null
+            
+        },
+
+        {
+            'aluno': 'Rafael Marques',
+            'data': '11/06/2018',
+            'valor': 39.99,
+            'reembolso': '13/06/2018'
+            
+        },
+
+        {
+            'aluno': 'Maria Isabel Pereira',
+            'data': '11/06/2018',
+            'valor': 29.99,
+            'reembolso': null
+            
+        },
+
+        {
+            'aluno': 'Andre Luis Silva',
+            'data': '12/06/2018',
+            'valor': 34.99,
+            'reembolso': null
+            
+        }
+    
+    ];
+
+    var listar_elementos = document.getElementByClass("vendas_cursos");
+    listar_elementos = "";
+
+    for (var a = 0; a < vendas_cursos.length; a++) {
+    	if (vendas_cursos.reembolso) {
+    		var listar = vendas_cursos[a].reembolso;
+    		for (var b = 0; b < listar.length; b++) {
+    			listar_elementos.innerHTML += '<li>' + listar[b], vendas_cursos[a].aluno + '</li>';
+    		}
+    	}
+    }
