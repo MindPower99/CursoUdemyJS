@@ -26,13 +26,23 @@ document.getElementById("converter").onclick = function () {
 
 // 2)
 
-var ano_copa = 1930;
+/*var ano_copa = 1930;
 
 while (ano_copa < 2019) {
 	console.log(ano_copa);
 	document.getElementById("anos_copa").innerHTML += '<li>' + ano_copa + '</li>';
 	ano_copa += 4;
-}	
+}	*/
+
+// 2) outro jeito de fazer
+
+var inicio = 1930;
+
+document.getElementById("anos_copa").innerHTML = "";
+
+for (var a = inicio; a <= 2018; a += 4) {
+	document.getElementById("anos_copa").innerHTML += '<li>' + a + '</li>';
+}
 
 // 3)
 
