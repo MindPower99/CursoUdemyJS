@@ -2,11 +2,25 @@
 
 // 1)
 
-function calcular() {
+/* function calcular() {
 	var temp_c = document.getElementById("temp_celsius").value;
 	console.log(temp_c);
 	var temp_f = (9 * temp_c / 5) + 32; 
 	document.getElementById("temp_fahr").innerHTML = '<p>'+ temp_f + '</p>';
+
+} */
+
+// 1) outro jeito de fazer
+
+function celsiusToFah(temp_c) {
+	var temp_f = (9 * temp_c / 5) + 32;
+	return temp_f;
+}
+
+document.getElementById("converter").onclick = function () {
+	var celsius = parseFloat(document.getElementById("temp_celsius").value);
+	var fah = celsiusToFah(celsius);
+	document.getElementById("temp_fahr").innerHTML = "<strong>" + fah + "</strong>";
 
 }
 
@@ -95,15 +109,3 @@ var vendas_cursos = [
         }
     
     ];
-
-    var listar_elementos = document.getElementByClass("vendas_cursos");
-    listar_elementos = "";
-
-    for (var a = 0; a < vendas_cursos.length; a++) {
-    	if (vendas_cursos.reembolso) {
-    		var listar = vendas_cursos[a].reembolso;
-    		for (var b = 0; b < listar.length; b++) {
-    			listar_elementos.innerHTML += '<li>' + listar[b], vendas_cursos[a].aluno + '</li>';
-    		}
-    	}
-    }
