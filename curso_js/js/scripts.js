@@ -500,14 +500,76 @@ window.onmousemove = function(e) {
   console.log('eixo x' + e.pageX);
 
 } */
-
+/*
 window.onmousemove = function(e) {
 
  if (e.pageY < 5) {
   alert('Não perca os descontos exclusivos');
 }
 }
+*/
 
+// Aula 26 - Local Storage
+
+/*
+
+window.localStorage.setItem("nome","João");
+
+console.log(localStorage['nome']);
+
+*/
+
+/*
+console.log(localStorage['nome']);
+
+localStorage.removeItem("nome");
+
+console.log(localStorage['nome']);
+
+*/
+
+document.getElementById("enviar-nome").onclick = function () {
+
+  //guardar o nome digitado em local storage
+  var nome = document.getElementById("nome-usuario").value;
+  localStorage.setItem("nome", nome);
+
+  //esconder o formulário
+
+  document.getElementById("name-field").style.display = "none";
+
+  //atualizar e mostrar mensagem
+  document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + " ,tudo bem ?";
+  document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + " ?"
+  document.getElementById("welcome-area").style.display = "initial";
+
+
+};
+
+if(localStorage.nome) {
+
+  //esconder o formulário
+  document.getElementById("name-field").style.display = "none";
+
+  //atualizar e mostrar mensagem
+  document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + " ,tudo bem ?";
+  document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + " ?"
+  document.getElementById("welcome-area").style.display = "initial";
+}
+
+document.getElementById("not-me").onclick = function() {
+
+  // remover chave nome do local storage
+  localStorage.removeItem("nome");
+
+  //esconder mensagem de boas vindas
+  document.getElementById("welcome-area").style.display = "none";
+
+  // mostrar formulário
+  document.getElementById("name-field").style.display = "initial";
+
+}
+ 
 
 
 
