@@ -636,7 +636,7 @@ window.setTimeout(function () {
     }
   },1000);
 
-  */
+
 
   // Aula 29 - desafio do relógio
 
@@ -667,7 +667,44 @@ window.setTimeout(function () {
 
   }, 1000);
 
-  
+    */
+	
+	function valor_pedagio (categoria) {
+		switch(categoria) {
+			case '1':
+				return 11.22;
+			break;
+			
+			case '2':
+				return 22.45;
+			break;
+			
+			case '3':
+				return 16.88;
+			break;
+			
+			case '4':
+				return 33.65;
+			break;
+			
+			default:
+				return 'categoria não encontrada';
+		}
+	}
+	
+	var categoria_veiculo = "3";
+	
+	console.log(valor_pedagio(categoria_veiculo));
+	
+	categoria_veiculo = "2";
+	
+	console.log(valor_pedagio(categoria_veiculo));
+	
+	categoria_veiculo = "5";
+	
+	console.log(valor_pedagio(categoria_veiculo));
+	
+	
 
 
 
