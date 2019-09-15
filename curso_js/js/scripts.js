@@ -778,6 +778,9 @@ window.setTimeout(function () {
 	}
 	
 	*/
+	
+	/* 
+	
 	document.getElementById("mostrar_opcao").onclick = function () {
 		
 		var valor_selecionado = document.getElementById("options").value;
@@ -800,9 +803,31 @@ window.setTimeout(function () {
 		}
 		
 		document.getElementById("radio_selecionado").innerHTML = radio_selected;
+	}
+	
+	// Checkboxes
+	
+	document.getElementById("mostrar_check").onclick = function () {
 		
+		document.getElementById("check_selecionado").innerHTML = "";
+		var check = document.getElementsByName("interesse");
 		
+		for (var b = 0; b < check.length; b++) {
+			if (check[b].checked) {
+				document.getElementById("check_selecionado").innerHTML += '<li>' + check[b].value + '</li>';
+			}
+		}
+	}
+	
+	*/
+	
+	// Date
+	document.getElementById("mostrar_data").onclick = function () {
+		var data_select = document.getElementById("data_evento").value;
 		
+		var data_completa = new Date(data_select);
+		
+		document.getElementById("data_selecionada").innerHTML = data_completa;
 	}
 
 
