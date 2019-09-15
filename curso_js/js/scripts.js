@@ -449,7 +449,7 @@ else {
 	}
 }
 */
-
+/*
  var funcionarios = [
         
         {
@@ -490,8 +490,23 @@ else {
 	}
 
 
+*/
 
+// Aula 25 - BOM(Browser Object Model)
+/*
+window.onmousemove = function(e) {
 
+  console.log('eixo y' + e.pageY);;
+  console.log('eixo x' + e.pageX);
+
+} */
+
+window.onmousemove = function(e) {
+
+ if (e.pageY < 5) {
+  alert('Não perca os descontos exclusivos');
+}
+}
 
 
 
