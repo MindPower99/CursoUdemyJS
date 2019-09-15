@@ -639,7 +639,7 @@ window.setTimeout(function () {
 
 
   // Aula 29 - desafio do relógio
-
+*/
   window.setInterval(function() {
 
     var hora_atual = new Date();
@@ -667,8 +667,10 @@ window.setTimeout(function () {
 
   }, 1000);
 
-    */
+    
 	
+	// Aula 30 - Switch
+	/*
 	function valor_pedagio (categoria) {
 		switch(categoria) {
 			case '1':
@@ -703,6 +705,63 @@ window.setTimeout(function () {
 	categoria_veiculo = "5";
 	
 	console.log(valor_pedagio(categoria_veiculo));
+	*/
+	
+	// Aula 31 - Break e continue
+	
+	/*
+	var x = 0;
+	
+	while (x < 10) {
+		console.log(x);
+		x++;
+		
+		if (x == 5) {
+			break;
+		}
+	}
+	
+	
+	var lista = [1,5,9,33,56,89,100,25,145,15,48,157,56];
+	
+	for (a = 0; a < lista.length ; a++) {
+		if (lista[a] == 33) {
+			console.log('Valor encontrado');
+			break;
+		}
+		
+		console.log('tentativa: '+a);
+	}
+	
+	
+	
+	var num = 0;
+	
+	while (num < 20) {
+		
+		if (num == 3) {
+			num++;
+			continue;
+		}
+		
+		console.log(num);
+		num++;
+	}
+	
+	*/
+	
+	var num = 0;
+	
+	while (num <= 20) {
+		num++;
+		
+		if(num % 2 == 0) {
+			continue;
+		}
+		
+		console.log(num);
+	}
+	
 	
 	
 
