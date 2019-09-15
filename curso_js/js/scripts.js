@@ -528,6 +528,7 @@ console.log(localStorage['nome']);
 
 */
 
+/*
 document.getElementById("enviar-nome").onclick = function () {
 
   //guardar o nome digitado em local storage
@@ -569,10 +570,38 @@ document.getElementById("not-me").onclick = function() {
   document.getElementById("name-field").style.display = "initial";
 
 }
- 
+ */
+
+// Aula 27 - data e hora
+
+/*
+
+var data_hoje = new Date();
+console.log(data_hoje.getDate());
+
+var data_nascimento = "1980-03-01";
+
+var ano_nascimento = new Date("1980-03-01").getFullYear();
+var ano_atual = new Date().getFullYear();
+var idade = ano_atual - ano_nascimento;
+console.log(idade);
 
 
+var data = new Date();
 
+console.log(data.getTime() / 31536000000);
+
+*/
+
+var envio = new Date("2018-03-20");
+envio = envio.getTime();
+
+var entrega = new Date("2018-04-06");
+entrega = entrega.getTime();
+
+var dias = (entrega - envio) / 86400000;
+
+document.getElementById("dias_entrega").innerHTML = dias;
 
 
 
