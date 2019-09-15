@@ -639,7 +639,7 @@ window.setTimeout(function () {
 
 
   // Aula 29 - desafio do relógio
-*/
+
   window.setInterval(function() {
 
     var hora_atual = new Date();
@@ -667,7 +667,7 @@ window.setTimeout(function () {
 
   }, 1000);
 
-    
+    */
 	
 	// Aula 30 - Switch
 	/*
@@ -748,7 +748,7 @@ window.setTimeout(function () {
 		num++;
 	}
 	
-	*/
+	
 	
 	var num = 0;
 	
@@ -761,9 +761,49 @@ window.setTimeout(function () {
 		
 		console.log(num);
 	}
+	*/
 	
+	// Aula 32 - Formulários
 	
+	/*
+	// Select Box
 	
+	document.getElementById("mostrar_opcao").onclick = function () {
+		
+		var campo_select = document.getElementById("options");
+		var indice_selecionado = campo_select.options.selectedIndex;
+		var valor_selecionado = campo_select.options[indice_selecionado].innerHTML;
+		
+		document.getElementById("opcao_selecionada").innerHTML = valor_selecionado;
+	}
+	
+	*/
+	document.getElementById("mostrar_opcao").onclick = function () {
+		
+		var valor_selecionado = document.getElementById("options").value;
+		document.getElementById("opcao_selecionada").innerHTML = valor_selecionado;
+	}
+	
+	// Radio Buttons
+	
+	document.getElementById("mostrar_radio").onclick = function () {
+		
+		var radio = document.getElementsByName("genero");
+		
+		var radio_selected;
+		
+		for (var a = 0; a < radio.length; a++) {
+			if (radio[a].checked) {
+				radio_selected = radio[a].value;
+				break;
+			}
+		}
+		
+		document.getElementById("radio_selecionado").innerHTML = radio_selected;
+		
+		
+		
+	}
 
 
 
