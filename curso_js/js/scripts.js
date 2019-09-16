@@ -591,7 +591,6 @@ var data = new Date();
 
 console.log(data.getTime() / 31536000000);
 
-*/
 
 var envio = new Date("2018-03-20");
 envio = envio.getTime();
@@ -602,6 +601,41 @@ entrega = entrega.getTime();
 var dias = (entrega - envio) / 86400000;
 
 document.getElementById("dias_entrega").innerHTML = dias;
+
+*/
+
+// Aula 28 - métodos de tempo
+
+/*
+console.log('mensagem 1');
+
+window.setTimeout(function () {
+  console.log('mensagem 2');
+}, 3000)
+
+  document.getElementById('mostrar-loader').onclick = function() {
+
+      document.getElementById('spinner-loader').style.display = "initial";
+
+      window.setTimeout(function() {
+
+        document.getElementById("spinner-loader").style.display = "none";
+      }, 5000);
+
+  }
+
+   */
+
+  var count = 0;
+
+  var inter = window.setInterval(function () {
+    console.log(count);
+    count++;
+    if (count >= 10) {
+      window.clearInterval(inter);
+    }
+  },1000);
+
 
 
 
