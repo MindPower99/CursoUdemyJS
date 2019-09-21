@@ -24,8 +24,31 @@ window.onload = function() {
 
 // 2)
 
+
+
 document.getElementById("confirmar_pedido").onclick = function () {
 	
+	var selection = document.getElementById("envios").value;
+	
+	if (selection == "escolha") {
+		alert("Escolha um modelo de envio");
+	}
+	
+	else {
+		if (selection == "normal") {
+			var dias_entrega = 18;
+			
+		} else if (selection == "express") {
+			var dias_entrega = 12;
+		}
+		
+		var data_envio = new Date().getTime();
+		var data_entrega  = data_envio + (dias_entrega * 86400000);
+		
+	}
+	
+}
+	/*
 	var data = new Date();
 	var tipo_envio = document.getElementById("envios");
 	var envio_selecionado = tipo_envio.options.selectedIndex;
@@ -48,7 +71,7 @@ document.getElementById("confirmar_pedido").onclick = function () {
 	
 	document.getElementById("data_pedido").innerHTML = getDate() + '/' + getMouth() + '/' + getFullYear();
 	
-	
+	*/
 }
 
 // 3)
