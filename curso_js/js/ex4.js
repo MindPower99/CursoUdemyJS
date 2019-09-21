@@ -51,30 +51,23 @@ document.getElementById("confirmar_pedido").onclick = function () {
 	
 }
 
-/*
-var data_hoje = new Date();
-console.log(data_hoje.getDate());
+// 3)
 
-var data_nascimento = "1980-03-01";
+	document.getElementById("comecar_parar").onclick = function () {
+		
+		window.setInterval(function () {
+		var zerar = 0;
+		while (zerar == 0) {
+		var hora_atual = new Date();
+		var horas = hora_atual.getHours(0);
+		var minutos = hora_atual.getMinutes(0);
+		var segundos = 1;
+		var milisegundos = hora_atual.getMilliseconds(10);
+		document.getElementById("cronometro").innerHTML = horas + ':' + minutos + ':' + segundos + ':' + milisegundos; 
+		
+		}
+	},1000);
+	
+	}
 
-var ano_nascimento = new Date("1980-03-01").getFullYear();
-var ano_atual = new Date().getFullYear();
-var idade = ano_atual - ano_nascimento;
-console.log(idade);
 
-
-var data = new Date();
-
-console.log(data.getTime() / 31536000000);
-
-
-var envio = new Date("2018-03-20");
-envio = envio.getTime();
-
-var entrega = new Date("2018-04-06");
-entrega = entrega.getTime();
-
-var dias = (entrega - envio) / 86400000;
-
-document.getElementById("dias_entrega").innerHTML = dias;
-*/
