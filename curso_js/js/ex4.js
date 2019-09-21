@@ -24,7 +24,17 @@ window.onload = function() {
 
 // 2)
 
+function add_zero (number) {
+	if (number < 10) {
+		return "0" + number.toString();
+	}
+}
+function format_date(timestamp) {
+	var dia = new Date(timestamp).getDate();
+	var mes = new Date(timestamp).getMonth() + 1;
+	var ano = new Date(timestamp).getFullYear();
 
+}
 
 document.getElementById("confirmar_pedido").onclick = function () {
 	
