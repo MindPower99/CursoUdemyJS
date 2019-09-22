@@ -846,6 +846,8 @@ window.setTimeout(function () {
 	}
 	*/
 	
+  /*
+
 	var check = document.getElementsByName("lanche");
 
     for (var a = 0;  a < check.length; a++) {
@@ -862,6 +864,64 @@ window.setTimeout(function () {
             }
         }  
     }
+
+  */
+
+  // Aula 34 - JQuery
+
+  // Vanilla Javascript (javascript puro)
+
+/*
+  var elementos = document.getElementsByClassName("exemplo");
+
+  for (var a = 0; a < elementos.length; a++) {
+
+    elementos[a].style['background-color'] = 'black';
+  }
+
+  // JQuery
+
+  $(".exemplo").css("background-color", "black");
+
+*/
+
+// Mudando o inner html de um elemento com id
+
+// Vanilla javascript
+
+/*
+document.getElementById("exemplo").innerHTML = "Olá";
+*/
+// JQuery 
+/*
+$("#elemento").html("Olá");
+*/
+
+// esconder elementos com método css
+/*
+$("#esconder").click(function () {
+  $('.exemplo').css("display", "none");
+});
+*/
+// esconder elementos com método hide
+
+$("#esconder").click(function () {
+  $('.exemplo').hide();
+});
+
+/*
+$("*")  Todos os elementos
+$("div.exemplo")  Todos os elementos div que tenham a classe exemplo
+$("p:first")  O primeiro elemento p
+$("ul li:first-child")  O primeiro elemento li de todos os elementos ul
+$("[href]") Todos os elementos que tenham o atributo href
+$("a[target='_blank']") Todos os elementos que tenham o atributo target="_blank"
+$("a[target!='_blank']")  Todos os elementos que NÃO tenham o atributo target="_blank"
+$(":button")  Todos os elementos button ou inputs que tenham type="button"
+$("tr:even")  Todos os elementos tr pares (0, 2, 4...)
+$("tr:odd") Todos os elementos tr ímpares (1, 3, 5...)
+
+*/
 	
 	
 	
