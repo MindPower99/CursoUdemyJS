@@ -922,26 +922,45 @@ $("tr:even")  Todos os elementos tr pares (0, 2, 4...)
 $("tr:odd") Todos os elementos tr ímpares (1, 3, 5...)
 
 */
-	
-	
-	
-	
-	
+
+//  Aula 35 - Jquery - Manipulação do conteudo html
 
 
 
+// pegar o conteudo
+
+
+var conteudo_html = $("#paragrafo-html").html();
+
+console.log(conteudo_html);
+
+// mudar o conteudo do href
+
+$("#paragrafo-html").html("mudarp conteudo do paragrafo");
+
+var text_html = $("#paragrafo-html").text();
+
+console.log(text_html);
+
+var url_link = $("#paragrafo-link").attr("href");
+
+
+$("#paragrafo-link").attr("href","http://www.udemy.com");
+url_link = $("#paragrafo-link").attr("href");
+console.log(url_link);
+
+// Mudar imagem através do atributo src
+
+$("#mudar_imagem").click(function() {
+  $("#imagem_js").attr("src","https://cdn.tutsplus.com/net/uploads/2013/12/managing-async-nodejs-retina-preview.png");
+  $("#mudar_imagem").hide();
+});
+
+// métodos empty e remove
+
+$("#paragrafo-empty").empty(); // remove o conteudo e mantem o elemento
+
+$("#paragrafo-empty").remove(); // remove o elemento
 
 
 
-
-
-
-
-
-
-
-
-
-  
-  
-  
