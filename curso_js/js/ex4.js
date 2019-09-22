@@ -67,30 +67,6 @@ document.getElementById("confirmar_pedido").onclick = function () {
 	}
 	
 }
-	/*
-	var data = new Date();
-	var tipo_envio = document.getElementById("envios");
-	var envio_selecionado = tipo_envio.options.selectedIndex;
-	var envio = tipo_envio.options[envio_selecionado].value;
-	
-	window.localStorage.setItem("tipo_envio", envio);
-	//toString(estado_selecionado);
-	
-	if(envio == "normal") {
-		console.log(data);
-		var dias_normal = new Date(19)
-		var dia_mes = new Date().getDate();
-		console.log(dia_mes);
-		var prazo_entrega = dia_mes + 12;
-		console.log(prazo_entrega);
-		
-		
-
-	}
-	
-	document.getElementById("data_pedido").innerHTML = getDate() + '/' + getMouth() + '/' + getFullYear();
-	
-	*/
 
 
 // 3)
@@ -111,5 +87,86 @@ document.getElementById("confirmar_pedido").onclick = function () {
 	},1000);
 	
 	}
+
+
+	// 4)
+
+	 var carros = [
+
+        {
+            'placa': 'AAA-0198',
+            'categoria': '1',
+        },
+
+        {
+            'placa': 'HBP-2837',
+            'categoria': '2',
+        },
+
+        {
+            'placa': 'PLQ-0928',
+            'categoria': '4',
+        },
+
+        {
+            'placa': 'KQE-2093',
+            'categoria': '5',
+        },
+
+        {
+            'placa': 'AMR-9087',
+            'categoria': '5',
+        },
+
+        {
+            'placa': 'BQE-8111',
+            'categoria': '3',
+        },
+
+        {
+            'placa': 'GXL-9001',
+            'categoria': '2',
+        },
+
+        {
+            'placa': 'KPM-7740',
+            'categoria': '1',
+        }
+	];
+
+	function valor_a_pagar (veiculo) {
+
+		switch(veiculo.categoria) {
+
+			case '1':
+				return 11.22;
+				break;
+
+			case '2':
+				return 22.45;
+				break;
+
+			case '3':
+				return 16.88;
+				break;
+
+			case '4':
+				return 33.65;
+				break;
+
+			default:
+				console.log('veiculo de placa ' + veiculo.placa + ' não fez pagamento por erro de categoria ('+ veiculo.categoria + ')');
+				return 0;
+		}
+	}
+
+	var total_arrecadado = 0;
+
+	for (var a = 0; a < carros.length; a++) {
+
+		total_arrecadado += valor_a_pagar(carros[a]);
+	}
+
+	document.getElementById("faturamento_total").innerHTML = total_arrecadado.toFixed(2);
 
 
