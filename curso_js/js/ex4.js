@@ -72,7 +72,7 @@ document.getElementById("confirmar_pedido").onclick = function () {
 // 3)
 
 var iniciado = false;
-var hora_inicio, hora_atual, init_cronometro, tempo_passado;
+var hora_inicio, hora_atual, init_cronometro, tempo_passado, horas, minutos, segundos, milisegundos;
 
 	document.getElementById("comecar_parar").onclick = function () {
 		
@@ -99,7 +99,19 @@ var hora_inicio, hora_atual, init_cronometro, tempo_passado;
 				hora_atual = new Date().getTime();
 				tempo_passado = hora_atual - hora_inicio;
 
-				document.getElementById("cronometro").innerHTML = tempo_passado;
+				horas = Math.floor(tempo_passado / 3600000);
+				resto = tempo_passado - (horas  * 3600000);
+
+				minutos = Math.floor(resto / 60000);
+				resto -= (minutos * 60000) ;
+
+				segundos = Math.floor(resto / 1000);
+				resto -= (segundos * 1000);
+
+				milisegundos = resto;
+
+
+				document.getElementById("cronometro").innerHTML = add_zero(horas) + ':' + add_zero(minutos) + ':' + add_zero(segundos) + ':'+ add_zero(milisegundos);
 
 			}, 10);
 		}
@@ -114,7 +126,7 @@ var hora_inicio, hora_atual, init_cronometro, tempo_passado;
 			tempo_passado = 0;
 			hora_inicio = new Date().getTime();
 
-			document.getElementById("cronometro").innerHTML = "0";
+			document.getElementById("cronometro").innerHTML = "00:00";
 		}
 	
 	}
