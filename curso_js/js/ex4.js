@@ -71,25 +71,58 @@ document.getElementById("confirmar_pedido").onclick = function () {
 
 // 3)
 
+var iniciado = false;
+var hora_inicio, hora_atual, init_cronometro, tempo_passado;
+
 	document.getElementById("comecar_parar").onclick = function () {
 		
-		window.setInterval(function () {
-		var zerar = 0;
-		while (zerar == 0) {
-		var hora_atual = new Date();
-		var horas = hora_atual.getHours(0);
-		var minutos = hora_atual.getMinutes(0);
-		var segundos = 1;
-		var milisegundos = hora_atual.getMilliseconds(10);
-		document.getElementById("cronometro").innerHTML = horas + ':' + minutos + ':' + segundos + ':' + milisegundos; 
-		
+		if (!iniciado) {
+			iniciado = true;
+			document.getElementById("comecar_parar").innerHTML = "Parar";
+
+			// começar o cronometro
+
+			if (!hora_inicio) {
+
+				hora_inicio = new Date().getTime();
+			}
+			else {
+
+				hora_inicio = new Date().getTime() - tempo_passado;
+
+			}
+
+			
+
+			init_cronometro = window.setInterval(function () {
+
+				hora_atual = new Date().getTime();
+				tempo_passado = hora_atual - hora_inicio;
+
+				document.getElementById("cronometro").innerHTML = tempo_passado;
+
+			}, 10);
 		}
-	},1000);
+		else {
+			window.clearInterval(init_cronometro);
+			iniciado = false;
+			document.getElementById("comecar_parar").innerHTML = "Começar";
+		}
+
+		document.getElementById("zerar").onclick = function() {
+
+			tempo_passado = 0;
+			hora_inicio = new Date().getTime();
+
+			document.getElementById("cronometro").innerHTML = "0";
+		}
 	
 	}
 
 
 	// 4)
+
+	/*
 
 	 var carros = [
 
@@ -169,4 +202,4 @@ document.getElementById("confirmar_pedido").onclick = function () {
 
 	document.getElementById("faturamento_total").innerHTML = total_arrecadado.toFixed(2);
 
-
+	*/
