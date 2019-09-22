@@ -28,11 +28,16 @@ function add_zero (number) {
 	if (number < 10) {
 		return "0" + number.toString();
 	}
+	else {
+		return number.toString();
+	}
 }
 function format_date(timestamp) {
-	var dia = new Date(timestamp).getDate();
-	var mes = new Date(timestamp).getMonth() + 1;
-	var ano = new Date(timestamp).getFullYear();
+	var dia = add_zero(new Date(timestamp).getDate());
+	var mes = add_zero(new Date(timestamp).getMonth() + 1);
+	var ano = add_zero(new Date(timestamp).getFullYear());
+
+	return dia + "/" + mes + "/" + ano;
 
 }
 
@@ -54,6 +59,10 @@ document.getElementById("confirmar_pedido").onclick = function () {
 		
 		var data_envio = new Date().getTime();
 		var data_entrega  = data_envio + (dias_entrega * 86400000);
+
+		document.getElementById("data_pedido").innerHTML = format_date(data_envio);
+		document.getElementById("data_entrega").innerHTML = format_date(data_entrega);
+
 		
 	}
 	
@@ -82,7 +91,7 @@ document.getElementById("confirmar_pedido").onclick = function () {
 	document.getElementById("data_pedido").innerHTML = getDate() + '/' + getMouth() + '/' + getFullYear();
 	
 	*/
-}
+
 
 // 3)
 
