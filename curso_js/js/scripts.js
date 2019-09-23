@@ -963,4 +963,45 @@ $("#paragrafo-empty").empty(); // remove o conteudo e mantem o elemento
 $("#paragrafo-empty").remove(); // remove o elemento
 
 
+// Aula 36 - Loop each
+
+/*
+
+  // Percorrendo arrays
+
+    var lista = ["HTML","CSS","Javascript", "jQuery", "PHP"];
+
+    $.each(lista,function(indice,valor) {
+      console.log('O elemento de indice [' + indice + '] tem o valor de ' + valor);
+
+    });
+
+  // Percorrendo objetos
+
+    var pessoa = {
+      'nome': 'João Pedro',
+      'DN': '20/01/1990',
+      'CPF': '111.111.111-11'
+    }
+
+    $.each(pessoa,function(chave,valor) {
+      console.log('O elemento de chave [' + chave + '] tem o valor de ' + valor);
+    });
+*/
+
+// atribuir li's dentro de uma variavel (array)
+
+var interesses = $("#interesses li");
+
+// percorrendo o array e mostrando o text
+
+$.each(interesses, function (indice, valor) {
+  console.log($(valor).text());
+})
+
+    
+
+
+
+
 
