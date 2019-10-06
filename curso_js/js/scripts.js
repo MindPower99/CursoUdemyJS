@@ -1142,8 +1142,10 @@ console.log ($('#options').find(":selected").text()) ;
 
     $("#toggle-tab").click(function() {
 
-        $("#tab-content").slideToggle();
-        $("#toggle-tab").toggleClass("flip");
+        $("#tab-content").slideToggle(3000, function() {
+          $("#toggle-tab").toggleClass("flip");
+        });
+        
         
     });
 
