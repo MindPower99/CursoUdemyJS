@@ -1140,14 +1140,26 @@ console.log ($('#options').find(":selected").text()) ;
 
     */
 
+    /*
     $("#toggle-tab").click(function() {
 
         $("#tab-content").slideToggle(3000, function() {
           $("#toggle-tab").toggleClass("flip");
         });
-        
+    
+    });
+
+    */
+
+    $("#toggle-tab").click(function() {
+
+        $("#tab-content").fadeToggle();
+        $("#toggle-tab").toggleClass("flip");
         
     });
+
+
+
 
 
  
