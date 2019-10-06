@@ -1,3 +1,4 @@
+$(document).ready(function() {
 
 //Aula 3 - variaveis
 //var latitude = 40.87663;
@@ -1081,7 +1082,24 @@ console.log ($('#options').find(":selected").text()) ;
 
   $("#alternar_classe").click(function() {
     $("#paragrafo-classes").toggleClass("styling");
-  })
+  });
+
+  // Aula 39 - Eventos JQUERY
+
+  /*
+
+ Sintaxe dos eventos jQuery:
+
+   $("elemento").evento(function(){
+
+        // código a ser executado quando ocorrer o evento
+
+    });
+
+  */
+ 
+});   
+
 
   
 
