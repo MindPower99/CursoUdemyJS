@@ -904,10 +904,11 @@ $("#esconder").click(function () {
 });
 */
 // esconder elementos com método hide
-
+/*
 $("#esconder").click(function () {
   $('.exemplo').hide();
 });
+*/
 
 /*
 $("*")  Todos os elementos
@@ -929,6 +930,7 @@ $("tr:odd") Todos os elementos tr ímpares (1, 3, 5...)
 
 // pegar o conteudo
 
+/*
 
 var conteudo_html = $("#paragrafo-html").html();
 
@@ -955,13 +957,14 @@ $("#mudar_imagem").click(function() {
   $("#imagem_js").attr("src","https://cdn.tutsplus.com/net/uploads/2013/12/managing-async-nodejs-retina-preview.png");
   $("#mudar_imagem").hide();
 });
-
+*/
 // métodos empty e remove
+/*
 
 $("#paragrafo-empty").empty(); // remove o conteudo e mantem o elemento
 
 $("#paragrafo-empty").remove(); // remove o elemento
-
+*/
 
 // Aula 36 - Loop each
 
@@ -991,13 +994,75 @@ $("#paragrafo-empty").remove(); // remove o elemento
 
 // atribuir li's dentro de uma variavel (array)
 
-var interesses = $("#interesses li");
+// var interesses = $("#interesses li");
 
 // percorrendo o array e mostrando o text
 
-$.each(interesses, function (indice, valor) {
+ /* $.each(interesses, function (indice, valor) {
   console.log($(valor).text());
-})
+}) */
+
+// Aula 37 - Formularios
+
+// pegar o valor de um input
+
+var conteudo_input = $("#campo_nome").val();
+
+console.log(conteudo_input);
+
+// mudar o conteudo de um input
+
+$("#campo_nome").val("José");
+
+// pegar o valor de um select selecionado
+
+console.log( $("#options").val());
+
+// exibir o texto de um select
+
+console.log ($('#options').find(":selected").text()) ;
+
+// função pra exibir o texto de um select quando o conteudo muda
+
+   $("#options").change(function(){
+        var novo_selecionado = $('#options').find(":selected").text();
+        console.log(novo_selecionado);
+    });
+
+// pegar o valor de um radio button
+
+  var valor_radio_selecionado = $("input[name='genero']:checked").val();
+  console.log(valor_radio_selecionado);
+
+// pegar o texto de um radio button
+
+  var texto_radio_selecionado = $("input[name='genero']:checked").parent('span').text();
+  console.log(texto_radio_selecionado);
+
+// pegar valores do check box
+
+    $("input[name='interesse']").change(function() {
+
+        var checkboxes_selecionados = $("input[name='interesse']:checked");
+        var textos = [];
+        
+        $.each(checkboxes_selecionados, function( index, value ) {
+            
+            textos.push($(value).parent("span").text());
+        
+        });
+        
+        console.log(textos);
+        
+    });
+  
+
+  
+
+
+
+
+
 
     
 
