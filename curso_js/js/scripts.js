@@ -1098,6 +1098,8 @@ console.log ($('#options').find(":selected").text()) ;
 
   */
 
+  // mostrar o botão só quando começar a digitar algo e esconde-lo se não tiver nada
+
   $("#nome").keyup(function () {
     var conteudo = $("#nome").val();
     if (conteudo) {
@@ -1111,6 +1113,22 @@ console.log ($('#options').find(":selected").text()) ;
   
 
 });   
+
+  // Aula 40 - Efeitos Jquery
+
+  // sintaxe
+
+  //$("elemento").hide(velocidade, callback);
+
+  // esconder o botão quando clicar e mostrar o texto
+
+  $("#botao-esconder").click(function() {
+    $(this).hide(1000,function() {
+      $("#texto-escondido").show();
+    });
+    
+  });
+
 
 
   
