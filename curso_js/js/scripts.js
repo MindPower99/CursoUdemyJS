@@ -1112,7 +1112,7 @@ console.log ($('#options').find(":selected").text()) ;
 
   
 
-});   
+  
 
   // Aula 40 - Efeitos Jquery
 
@@ -1121,13 +1121,26 @@ console.log ($('#options').find(":selected").text()) ;
   //$("elemento").hide(velocidade, callback);
 
   // esconder o botão quando clicar e mostrar o texto
-
+/*
   $("#botao-esconder").click(function() {
     $(this).hide(1000,function() {
-      $("#texto-escondido").show();
+      $("#texto-escondido").show()
     });
+
+*/
+  $("#toggle-tab").click(function() {
+
+        $("#tab-content").toggle();
+        $("#toggle-tab").toggleClass("flip");
+        
+    });
+
+
+
     
   });
+
+
 
 
 
