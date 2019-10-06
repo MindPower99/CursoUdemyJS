@@ -1004,6 +1004,8 @@ $("#paragrafo-empty").remove(); // remove o elemento
 
 // Aula 37 - Formularios
 
+/*
+
 // pegar o valor de um input
 
 var conteudo_input = $("#campo_nome").val();
@@ -1055,7 +1057,31 @@ console.log ($('#options').find(":selected").text()) ;
         console.log(textos);
         
     });
-  
+  */
+
+  // Aula 38 - Manipulação de classes css
+
+  // mudar o css de um elemento
+
+  $(".exemplo").css("display", "none"); 
+
+  // adicionar uma classe ao clicar no botão
+
+  $("#adicionar_classe").click(function() {
+    $("#paragrafo-classes").addClass("styling")
+  });
+
+  // remover uma classe ao clicar no botão
+
+  $("#remover_classe").click(function() {
+    $("#paragrafo-classes").removeClass();
+  });
+
+  // adicionar ou remover uma classe ao clicar em um unico botao
+
+  $("#alternar_classe").click(function() {
+    $("#paragrafo-classes").toggleClass("styling");
+  })
 
   
 
