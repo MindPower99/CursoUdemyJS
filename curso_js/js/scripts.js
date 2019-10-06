@@ -1128,6 +1128,9 @@ console.log ($('#options').find(":selected").text()) ;
     });
 
 */
+
+// esconder o botao com toggle
+/*
   $("#toggle-tab").click(function() {
 
         $("#tab-content").toggle();
@@ -1135,9 +1138,17 @@ console.log ($('#options').find(":selected").text()) ;
         
     });
 
+    */
+
+    $("#toggle-tab").click(function() {
+
+        $("#tab-content").slideToggle();
+        $("#toggle-tab").toggleClass("flip");
+        
+    });
 
 
-    
+ 
   });
 
 
