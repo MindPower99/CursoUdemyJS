@@ -1097,7 +1097,19 @@ console.log ($('#options').find(":selected").text()) ;
     });
 
   */
- 
+
+  $("#nome").keyup(function () {
+    var conteudo = $("#nome").val();
+    if (conteudo) {
+      $("#confirmar").css("display","initial");
+    }
+    else {
+      $("#confirmar").css("display","none");
+    }
+  });
+
+  
+
 });   
 
 
