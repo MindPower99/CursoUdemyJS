@@ -1166,12 +1166,27 @@ console.log ($('#options').find(":selected").text()) ;
   // $("elemento").animate({propriedade: valor}, velocidade, callback);
 
   // aumentar o tamanho de um quadrado ao clicar no botão
+  /*
 
   $("#animar").click(function() {
     $("#quadrado").animate({
       width: "+=20px",
       height: "+=20px"
     },2000);
+  });
+
+  */
+
+  //
+
+  $("#animar").click(function() {
+    $("#quadrado").animate({
+      width: "+=100px"
+    },5000);
+
+    $("#quadrado").animate({
+      height: "+=100px"
+    },5000);
   });
  
   });
