@@ -1153,15 +1153,26 @@ console.log ($('#options').find(":selected").text()) ;
 
     $("#toggle-tab").click(function() {
 
-        $("#tab-content").fadeToggle();
+        $("#tab-content").fadeToggle(); // dentro do fadeToggle podemos passar o tempo em milisegundos, ou escrevendo "slow" ou "fast"
         $("#toggle-tab").toggleClass("flip");
         
     });
 
 
+    // Aula 41 - Método animate JQuery
 
+  // Sintaxe
 
+  // $("elemento").animate({propriedade: valor}, velocidade, callback);
 
+  // aumentar o tamanho de um quadrado ao clicar no botão
+
+  $("#animar").click(function() {
+    $("#quadrado").animate({
+      width: "+=20px",
+      height: "+=20px"
+    },2000);
+  });
  
   });
 
