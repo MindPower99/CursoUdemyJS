@@ -1177,7 +1177,9 @@ console.log ($('#options').find(":selected").text()) ;
 
   */
 
-  //
+  //  aumentar o tamanho de um quadrado primeiro a largura depois a altura
+
+  /*
 
   $("#animar").click(function() {
     $("#quadrado").animate({
@@ -1188,8 +1190,41 @@ console.log ($('#options').find(":selected").text()) ;
       height: "+=100px"
     },5000);
   });
- 
+
+  */
+
+  // Aula 42 - Métodos em cadeia JQuery
+
+  /* 
+
+  $("#animar").click(function() {
+    $("#quadrado").animate({
+      width: "+=100px"
+    },800).animate({
+      height: "+=100px"
+    },800).css("background-color","green");
   });
+  */
+
+  // Método em cadeia com função callback (o background color só é executado quando a função anterior termina de executar)
+
+    $("#animar").click(function() {
+    $("#quadrado").animate({
+      width: "+=100px"
+    },800).animate({
+      height: "+=100px"
+    },800, function() {
+      $("#quadrado").css("background-color","green");
+    });
+  });
+
+
+
+
+  });
+
+
+
 
 
 
